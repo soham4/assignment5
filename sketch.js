@@ -14,7 +14,6 @@ function setup() {
     
     inp1 = createColorPicker('#ff0000');
     inp1.position(width/12, radio.y-100);
-    text('select Color', width/12, radio.y-110);
     slider1 = createSlider(0, width/5, width/2.5);
     slider1.position(width/12, radio.y-40);
     slider1.style('width', 'width/12');
@@ -32,6 +31,9 @@ function setup() {
     rectMode(CORNER);
     noStroke();
     rect(0, 0, width/4, height);
+     fill(0);
+     text('select Color', width/12, radio.y-110);
+     text('select size', width/12, radio.y-50);
      if(radio.value()==='draw flower'){
     cnv.mouseClicked(drawFlower);
   }
